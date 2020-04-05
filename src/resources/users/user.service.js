@@ -1,5 +1,5 @@
-const usersRepo = require('./user.memory.repository');
+// const usersRepo = require('./user.memory.repository');
 
-const getAll = () => usersRepo.getAll();
+// const getAll = () => usersRepo.getAll();
 
-module.exports = { getAll };
+// module.exports = { getAll };
