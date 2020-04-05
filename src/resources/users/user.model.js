@@ -84,14 +84,6 @@ class User {
     return users.find(item => item.id === userId);
   }
 
-  // static async changeUser(userId) {
-  //   const users = await User.getAll();
-  //   const ind = users.findIndex(item => item.id === userId);
-  //   users[ind] = {
-  //     name: item.name,
-  //     login: item.login
-  //   };
-  // }
   static async changeUser(userId, name, login, password) {
     const tmp = await User.getAll();
     const ind = tmp.findIndex(item => item.id === userId);
@@ -122,7 +114,7 @@ class User {
     const tmp = await User.getAll();
     const ind = tmp.findIndex(item => item.id === userId);
     const users = await User.getAllWithPass();
-    console.log('del ind ');
+    console.log(`del ind ${ind}`);
     users.splice(ind, 1);
     return new Promise((res, rej) => {
       fs.writeFile(
