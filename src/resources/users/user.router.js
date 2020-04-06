@@ -30,7 +30,7 @@ router
     res.json(user);
   })
   .delete(async (req, res) => {
-    await User.delUser();
+    await User.delUser(req.params.userId);
     res.send('delete');
   });
 

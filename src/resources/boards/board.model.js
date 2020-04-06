@@ -77,9 +77,10 @@ class Board {
     });
   }
 
-  static async getBoardId(boardsId) {
+  static async getBoardId(boardId) {
     const boards = await Board.getAll();
-    return boards.find(item => item.id === boardsId);
+    // console.log('>>> ' + boards.find(item => item.id === boardId))
+    return boards.find(item => item.id === boardId);
   }
 
   static async changeBoard(boardsId, title, columns) {
