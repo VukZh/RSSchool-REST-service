@@ -17,7 +17,11 @@ router
   .route('/:userId')
   .get(async (req, res) => {
     const user = await User.getUserId(req.params.userId);
-    res.json(user);
+    if (!user) {
+      res.status(404).json('User not found');
+    } else {
+      res.json(user);
+    }
   })
   .put(async (req, res) => {
     await User.changeUser(
@@ -27,11 +31,20 @@ router
       req.body.password
     );
     const user = await User.getUserId(req.params.userId);
-    res.json(user);
+    if (!user) {
+      res.status(400).json('Bad request');
+    } else {
+      res.json(user);
+    }
   })
   .delete(async (req, res) => {
-    await User.delUser(req.params.userId);
-    res.send('delete');
+    const user = await User.getUserId(req.params.userId);
+    if (!user) {
+      res.status(404).json('User not found');
+    } else {
+      await User.delUser(req.params.userId);
+      res.status(204).send('The user has been deleted');
+    }
   });
 
 module.exports = router;

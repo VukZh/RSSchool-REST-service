@@ -29,7 +29,6 @@ class Task {
   async saveTask() {
     const tasks = await Task.getAllTask();
     tasks.push(this.taskToJSON());
-    console.log(`... ${this.taskToJSON()}`);
     return new Promise((res, rej) => {
       fs.writeFile(
         path.join(__dirname, '../..', 'data', 'tasks.json'),
@@ -121,18 +120,8 @@ class Task {
 
   static async getTaskId(boardId, taskId) {
     const tasks = await Task.getAll_Board(boardId);
-    // console.log(
-    //   `ind ${tasks.findIndex(
-    //     item => item.id === taskId && item.boardId === boardId
-    //   )}`
-    // );
     return tasks.find(item => item.id === taskId && item.boardId === boardId);
   }
-
-  //   static async getBoardId(boardId) {
-  //     const boards = await Board.getAll();
-  //     return boards.find(item => item.id === boardId);
-  //   }
 
   // eslint-disable-next-line max-params
   static async changeTask(
@@ -147,14 +136,12 @@ class Task {
     columnId
   ) {
     const tmp = await Task.getAll();
+
     const ind = tmp.findIndex(
       item => item.id === taskIdOld && item.boardId === boardIdOld
     );
+    if (ind === -1) return;
     const tasks = await Task.getAllTask();
-
-    // console.log('ind ' + ind + ' ' + taskIdOld + ' ' + boardIdOld);
-    // console.log(tmp[ind]);
-
     tasks[ind] = JSON.stringify({
       id,
       title,
@@ -185,8 +172,61 @@ class Task {
       item => item.id === taskId && item.boardId === boardId
     );
     const tasks = await Task.getAllTask();
-    console.log(`del ind ${ind} ${taskId} ${boardId} ${tasks.length}`);
     tasks.splice(ind, 1);
+    return new Promise((res, rej) => {
+      fs.writeFile(
+        path.join(__dirname, '../..', 'data', 'tasks.json'),
+        JSON.stringify(tasks),
+        err => {
+          if (err) {
+            rej(err);
+          } else {
+            res();
+          }
+        }
+      );
+    });
+  }
+
+  static async delTaskInBoard(boardId) {
+    const tmp = await Task.getAll();
+    const tasks = await Task.getAllTask();
+    const ind = [];
+    for (const [index, val] of tmp.entries()) {
+      if (val.boardId === boardId) ind.push(index);
+    }
+    ind.reverse().forEach(item => {
+      return tasks.splice(item, 1);
+    });
+
+    return new Promise((res, rej) => {
+      fs.writeFile(
+        path.join(__dirname, '../..', 'data', 'tasks.json'),
+        JSON.stringify(tasks),
+        err => {
+          if (err) {
+            rej(err);
+          } else {
+            res();
+          }
+        }
+      );
+    });
+  }
+
+  static async nulTaskForUser(userId) {
+    const tmp = await Task.getAll();
+    const tasks = await Task.getAllTask();
+    const ind = [];
+    for (const [index, val] of tmp.entries()) {
+      if (val.userId === userId) ind.push(index);
+    }
+    ind.forEach(item => {
+      const _tmp = JSON.parse(tasks[item]);
+      _tmp.userId = 'null';
+      tasks[item] = JSON.stringify(_tmp);
+    });
+
     return new Promise((res, rej) => {
       fs.writeFile(
         path.join(__dirname, '../..', 'data', 'tasks.json'),

@@ -21,7 +21,6 @@ class Board {
   async saveBoard() {
     const boards = await Board.getAllBoard();
     boards.push(this.boardToJSON());
-    console.log(`... ${this.boardToJSON()}`);
     return new Promise((res, rej) => {
       fs.writeFile(
         path.join(__dirname, '../..', 'data', 'boards.json'),
@@ -79,7 +78,6 @@ class Board {
 
   static async getBoardId(boardId) {
     const boards = await Board.getAll();
-    // console.log('>>> ' + boards.find(item => item.id === boardId))
     return boards.find(item => item.id === boardId);
   }
 
@@ -87,7 +85,6 @@ class Board {
     const tmp = await Board.getAll();
     const ind = tmp.findIndex(item => item.id === boardsId);
     const boards = await Board.getAllBoard();
-    // console.log(`ind ${ind} ${name} ${login} ${password}`);
     boards[ind] = JSON.stringify({
       id: boardsId,
       title,
@@ -112,7 +109,6 @@ class Board {
     const tmp = await Board.getAll();
     const ind = tmp.findIndex(item => item.id === boardsId);
     const boards = await Board.getAllBoard();
-    console.log(`del ind ${ind}`);
     boards.splice(ind, 1);
     return new Promise((res, rej) => {
       fs.writeFile(

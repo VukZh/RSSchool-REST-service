@@ -17,7 +17,11 @@ router
   .route('/:boardId')
   .get(async (req, res) => {
     const board = await Board.getBoardId(req.params.boardId);
-    res.json(board);
+    if (!board) {
+      res.status(404).json('Board not found');
+    } else {
+      res.json(board);
+    }
   })
   .put(async (req, res) => {
     await Board.changeBoard(
@@ -26,11 +30,20 @@ router
       req.body.columns
     );
     const board = await Board.getBoardId(req.params.boardId);
-    res.json(board);
+    if (!board) {
+      res.status(400).json('Bad request');
+    } else {
+      res.json(board);
+    }
   })
   .delete(async (req, res) => {
-    await Board.delBoard(req.params.boardId);
-    res.send('delete');
+    const board = await Board.getBoardId(req.params.boardId);
+    if (!board) {
+      res.status(404).json('Board not found');
+    } else {
+      await Board.delBoard(req.params.boardId);
+      res.status(204).send('The user has been deleted');
+    }
   });
 
 module.exports = router;

@@ -23,7 +23,6 @@ class User {
   async saveUser() {
     const users = await User.getAllWithPass();
     users.push(this.userToJSON());
-    console.log(`... ${this.userToJSON()}`);
     return new Promise((res, rej) => {
       fs.writeFile(
         path.join(__dirname, '../..', 'data', 'users.json'),
@@ -88,7 +87,6 @@ class User {
     const tmp = await User.getAll();
     const ind = tmp.findIndex(item => item.id === userId);
     const users = await User.getAllWithPass();
-    console.log(`ind ${ind} ${name} ${login} ${password}`);
     users[ind] = JSON.stringify({
       id: userId,
       name,
@@ -114,7 +112,6 @@ class User {
     const tmp = await User.getAll();
     const ind = tmp.findIndex(item => item.id === userId);
     const users = await User.getAllWithPass();
-    console.log(`del ind ${ind}`);
     users.splice(ind, 1);
     return new Promise((res, rej) => {
       fs.writeFile(
