@@ -1,27 +1,15 @@
 const router = require('express').Router();
-const Task = require('./task.model');
+
+const tasksService = require('./task.service');
 
 router
   .route('/:boardId/tasks')
   .get(async (req, res) => {
-    const tasks = await Task.getAll_Board(req.params.boardId);
-    if (tasks.length === 0) {
-      res.status(401).json('Access token is missing or invalid');
-    } else {
-      const result = tasks.map(item => ({
-        id: item.id,
-        title: item.title,
-        order: item.order,
-        description: item.description,
-        userId: item.userId
-      }));
-      res.json(result);
-    }
-    // const tasks = await Task.delTaskInBoard(req.params.boardId);
-    // res.send('delete board');
+    const tasks = await tasksService.getAll(req.params.boardId);
+    res.status(200).json(tasks);
   })
   .post(async (req, res) => {
-    const tasks = new Task(
+    const resTask = await tasksService.saveTask(
       req.body.title,
       req.body.order,
       req.body.description,
@@ -29,34 +17,24 @@ router
       req.params.boardId,
       req.body.columnId
     );
-    await tasks.saveTask();
-    res.json({
-      id: tasks.id,
-      title: tasks.title,
-      order: tasks.order,
-      description: tasks.description,
-      userId: tasks.userId
-    });
+    res.status(200).json(resTask);
   });
 
 router
   .route('/:boardId/tasks/:taskId')
   .get(async (req, res) => {
-    const task = await Task.getTaskId(req.params.boardId, req.params.taskId);
-    if (!task) {
-      res.status(401).send('Access token is missing or invalid');
+    const resTask = await tasksService.getTaskId(
+      req.params.taskId,
+      req.params.boardId
+    );
+    if (resTask) {
+      res.status(200).json(resTask);
     } else {
-      res.json({
-        id: task.id,
-        title: task.title,
-        order: task.order,
-        description: task.description,
-        userId: task.userId
-      });
+      res.status(404).json('Task not found');
     }
   })
   .put(async (req, res) => {
-    await Task.changeTask(
+    const resTask = await tasksService.changeTask(
       req.params.taskId,
       req.params.boardId,
       req.body.id,
@@ -67,26 +45,21 @@ router
       req.body.boardId,
       req.body.columnId
     );
-    const task = await Task.getTaskId(req.body.boardId, req.body.id);
-    if (!task) {
-      res.status(404).send('Task not found');
+    if (resTask) {
+      res.status(200).json(resTask);
     } else {
-      res.json({
-        id: task.id,
-        title: task.title,
-        order: task.order,
-        description: task.description,
-        userId: task.userId
-      });
+      res.status(401).json('Access token is missing or invalid');
     }
   })
   .delete(async (req, res) => {
-    const task = await Task.getTaskId(req.params.boardId, req.params.taskId);
-    if (!task) {
-      res.status(404).json('Task not found');
+    const delTask = await tasksService.delTask(
+      req.params.taskId,
+      req.params.boardId
+    );
+    if (delTask) {
+      res.status(204).json('The task has been deleted');
     } else {
-      await Task.delTask(req.params.taskId, req.params.boardId);
-      res.status(204).send('The task has been deleted');
+      res.status(404).json('Task not found');
     }
   });
 

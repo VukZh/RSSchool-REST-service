@@ -25,7 +25,4 @@ app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 app.use('/boards', taskRouter);
 
-// '/users/:userId/books/:bookId'
-// /boards/{boardId}/tasks
-
 module.exports = app;
