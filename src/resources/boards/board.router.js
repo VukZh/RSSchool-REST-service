@@ -1,48 +1,108 @@
 const router = require('express').Router();
-const Board = require('./board.model');
+
+const boardsService = require('./board.service');
+const tasksService = require('../tasks/task.service');
+// const { BAD_REQUEST, getStatusText } = require('http-status-codes');
+
+const { validationResult, param, body } = require('express-validator');
 
 router
   .route('/')
-  .get(async (req, res) => {
-    const boards = await Board.getAll();
-    res.json(boards);
+  .get(async (req, res, next) => {
+    try {
+      const boards = await boardsService.getAll();
+      res.status(200).json(boards);
+    } catch (error) {
+      return next(error);
+    }
   })
-  .post(async (req, res) => {
-    const board = new Board(req.body.title, req.body.columns);
-    await board.saveBoard();
-    res.json({ id: board.id, title: board.title, columns: board.columns });
-  });
+  .post(
+    [body('title').isString(), body('columns').isArray()],
+    async (req, res, next) => {
+      try {
+        const errorReq = validationResult(req);
+        if (!errorReq.isEmpty()) {
+          throw new TypeError(
+            `wrong create board ${JSON.stringify(errorReq.array())}`
+          );
+        }
+        const resBoard = await boardsService.saveBoard(
+          req.body.title,
+          req.body.columns
+        );
+        res.status(200).json(resBoard);
+      } catch (error) {
+        return next(error);
+      }
+    }
+  );
 
 router
   .route('/:boardId')
-  .get(async (req, res) => {
-    const board = await Board.getBoardId(req.params.boardId);
-    if (!board) {
-      res.status(404).json('Board not found');
-    } else {
-      res.json(board);
+  .get([param('boardId').isUUID()], async (req, res, next) => {
+    try {
+      const errorReq = validationResult(req);
+      if (!errorReq.isEmpty()) {
+        throw new TypeError(
+          `wrong get board ${JSON.stringify(errorReq.array())}`
+        );
+      }
+      const resBoard = await boardsService.getBoardId(req.params.boardId);
+      if (resBoard) {
+        res.status(200).json(resBoard);
+      } else {
+        res.status(404).json('Board not found');
+      }
+    } catch (error) {
+      return next(error);
     }
   })
-  .put(async (req, res) => {
-    await Board.changeBoard(
-      req.params.boardId,
-      req.body.title,
-      req.body.columns
-    );
-    const board = await Board.getBoardId(req.params.boardId);
-    if (!board) {
-      res.status(400).json('Bad request');
-    } else {
-      res.json(board);
+  .put(
+    [
+      param('boardId').isUUID(),
+      body('title').isString(),
+      body('columns').isArray()
+    ],
+    async (req, res, next) => {
+      try {
+        const errorReq = validationResult(req);
+        if (!errorReq.isEmpty()) {
+          throw new TypeError(
+            `wrong edit board ${JSON.stringify(errorReq.array())}`
+          );
+        }
+        const resBoard = await boardsService.changeBoard(
+          req.params.boardId,
+          req.body.title,
+          req.body.columns
+        );
+        if (resBoard) {
+          res.status(200).json(resBoard);
+        } else {
+          res.status(401).json('Access token is missing or invalid');
+        }
+      } catch (error) {
+        return next(error);
+      }
     }
-  })
-  .delete(async (req, res) => {
-    const board = await Board.getBoardId(req.params.boardId);
-    if (!board) {
-      res.status(404).json('Board not found');
-    } else {
-      await Board.delBoard(req.params.boardId);
-      res.status(204).send('The user has been deleted');
+  )
+  .delete([param('boardId').isUUID()], async (req, res, next) => {
+    try {
+      const errorReq = validationResult(req);
+      if (!errorReq.isEmpty()) {
+        throw new TypeError(
+          `wrong delete board ${JSON.stringify(errorReq.array())}`
+        );
+      }
+      const delBoard = await boardsService.delBoard(req.params.boardId);
+      if (delBoard) {
+        await tasksService.delTaskInBoard(req.params.boardId);
+        res.status(204).json('The board has been deleted');
+      } else {
+        res.status(404).json('Board not found');
+      }
+    } catch (error) {
+      return next(error);
     }
   });
 

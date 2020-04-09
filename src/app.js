@@ -20,12 +20,27 @@ app.use('/', (req, res, next) => {
   }
   next();
 });
-
+app.use((req, res, next) => {
+  console.log(
+    `>>> ${req.method} ${req.url} reqBody ` +
+      ` query ${JSON.stringify(req.params)}`
+  );
+  next();
+});
+// app.use((req, res, next) => {console.log('>>>>>>>>>> ' + res.status()); next()})
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 app.use('/boards', taskRouter);
 
-// '/users/:userId/books/:bookId'
-// /boards/{boardId}/tasks
+// app.use((req, res, next) => {console.log('>>>>>>>>>> ' + res.status())})
+app.use((err, req, res, next) => {
+  // if (res.status === 422) {
+  console.log(`ERROR ... ${JSON.stringify(err)}`);
+  console.log(`ERROR ... ${err}`);
+  res.json(err);
+  // }
+  // // console.log(`ERROR ... ${err}`);
+  next();
+});
 
 module.exports = app;
