@@ -2,12 +2,16 @@ const router = require('express').Router();
 
 const boardsService = require('./board.service');
 const tasksService = require('../tasks/task.service');
-// const { BAD_REQUEST, getStatusText } = require('http-status-codes');
+
+const routersMiddleware = require('../../common/routersMiddleware');
 
 const { validationResult, param, body } = require('express-validator');
 
 router
   .route('/')
+  .all((req, res, next) => {
+    routersMiddleware('boards/', req, res, next);
+  })
   .get(async (req, res, next) => {
     try {
       const boards = await boardsService.getAll();
@@ -39,6 +43,9 @@ router
 
 router
   .route('/:boardId')
+  .all((req, res, next) => {
+    routersMiddleware('boards/:boardId', req, res, next);
+  })
   .get([param('boardId').isUUID()], async (req, res, next) => {
     try {
       const errorReq = validationResult(req);

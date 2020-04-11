@@ -4,10 +4,19 @@ const User = require('./user.model');
 const usersService = require('./user.service');
 const tasksService = require('../tasks/task.service');
 
+const routersMiddleware = require('../../common/routersMiddleware');
+
 const { validationResult, param, body } = require('express-validator');
 
+// router.use((req, res, next) => {
+//   console.log('Time: ', Date.now());
+//   next();
+// });
 router
   .route('/')
+  .all((req, res, next) => {
+    routersMiddleware('users/', req, res, next);
+  })
   .get(async (req, res, next) => {
     try {
       const users = await usersService.getAll();
@@ -47,6 +56,9 @@ router
 
 router
   .route('/:userId')
+  .all((req, res, next) => {
+    routersMiddleware('users/:userId', req, res, next);
+  })
   .get([param('userId').isUUID()], async (req, res, next) => {
     try {
       const errorReq = validationResult(req);

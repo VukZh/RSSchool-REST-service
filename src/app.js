@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const express = require('express');
 const swaggerUI = require('swagger-ui-express');
 const path = require('path');
@@ -22,8 +23,9 @@ app.use('/', (req, res, next) => {
 });
 app.use((req, res, next) => {
   console.log(
-    `>>> ${req.method} ${req.url} reqBody ` +
-      ` query ${JSON.stringify(req.params)}`
+    `Main Request ... method=${req.method} url=${
+      req.url
+    } reqBody=${JSON.stringify(req.body)}`
   );
   next();
 });
@@ -34,13 +36,20 @@ app.use('/boards', taskRouter);
 
 // app.use((req, res, next) => {console.log('>>>>>>>>>> ' + res.status())})
 app.use((err, req, res, next) => {
-  // if (res.status === 422) {
-  console.log(`ERROR ... ${JSON.stringify(err)}`);
+  // console.log(`ERROR ,,, ${err.name}`);
   console.log(`ERROR ... ${err}`);
-  res.json(err);
+  if (err.name === 'TypeError') {
+    res.status(422).json('Invalid request parameters');
+  } else if (err.name === 'SyntaxError') {
+    res.status(400).json('Bad request');
+  } else {
+    return res.status(500).json('Internal Server Error');
+  }
+
+  // res.json(err);
   // }
   // // console.log(`ERROR ... ${err}`);
-  next();
+  // next();
 });
 
 module.exports = app;

@@ -2,10 +2,15 @@ const router = require('express').Router();
 
 const tasksService = require('./task.service');
 
+const routersMiddleware = require('../../common/routersMiddleware');
+
 const { validationResult, param, body } = require('express-validator');
 
 router
   .route('/:boardId/tasks')
+  .all((req, res, next) => {
+    routersMiddleware('boards/:boardId/tasks', req, res, next);
+  })
   .get([param('boardId').isUUID()], async (req, res, next) => {
     try {
       const errorReq = validationResult(req);
@@ -54,11 +59,12 @@ router
 
 router
   .route('/:boardId/tasks/:taskId')
+  .all((req, res, next) => {
+    routersMiddleware('boards/:boardId/tasks/:taskId', req, res, next);
+  })
   .get(
     [param('taskId').isUUID(), param('boardId').isUUID()],
     async (req, res, next) => {
-      // const errorReq = validationResult(req);
-      // console.log(errorReq.isEmpty())
       try {
         const errorReq = validationResult(req);
         if (!errorReq.isEmpty()) {
