@@ -1,14 +1,21 @@
 const { PORT } = require('./common/config');
 const app = require('./app');
 
-// process.on('unhandledRejection', (reason, promise) => {
-//   console.error('-=-=-=-=-=- Unhandled Rejection at:', reason.stack || reason);
-// })
+const uncaughtException = require('./common/uncaughtException');
+const unhandledRejection = require('./common/unhandledRejection');
 
-// process.on('uncaughtException', (err) => {
-//   console.log(`-=-=-=-=-=- Caught exception: ${err}`);
-// });
+uncaughtException();
+unhandledRejection();
 
 app.listen(PORT, () =>
   console.log(`App is running on http://localhost:${PORT}`)
 );
+// ////////////////////////////////// RUN uncaughtException
+
+// throw new Error('...uncaughtException...');
+
+// ////////////////////////////////// RUN unhandledRejection
+
+// setTimeout(() => {
+//   Promise.reject(new Error('...unhandledRejection...'));
+// }, 3333);

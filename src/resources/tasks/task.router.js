@@ -1,16 +1,9 @@
 const router = require('express').Router();
-
 const tasksService = require('./task.service');
-
-const routersMiddleware = require('../../common/routersMiddleware');
-
-const { validationResult, param, body } = require('express-validator');
+const { validationResult, param } = require('express-validator');
 
 router
   .route('/:boardId/tasks')
-  .all((req, res, next) => {
-    routersMiddleware('boards/:boardId/tasks', req, res, next);
-  })
   .get([param('boardId').isUUID()], async (req, res, next) => {
     try {
       const errorReq = validationResult(req);
@@ -25,43 +18,20 @@ router
       return next(error);
     }
   })
-  .post(
-    [
-      body('title').isString(),
-      body('order').isInt(),
-      body('description').isString(),
-      body('userId').isUUID(),
-      param('boardId').isUUID(),
-      body('columnId').isUUID()
-    ],
-    async (req, res, next) => {
-      try {
-        const errorReq = validationResult(req);
-        if (!errorReq.isEmpty()) {
-          throw new TypeError(
-            `wrong create task ${JSON.stringify(errorReq.array())}`
-          );
-        }
-        const resTask = await tasksService.saveTask(
-          req.body.title,
-          req.body.order,
-          req.body.description,
-          req.body.userId,
-          req.params.boardId,
-          req.body.columnId
-        );
-        res.status(200).json(resTask);
-      } catch (error) {
-        return next(error);
-      }
-    }
-  );
+  .post(async (req, res) => {
+    const resTask = await tasksService.saveTask(
+      req.body.title,
+      req.body.order,
+      req.body.description,
+      req.body.userId,
+      req.params.boardId,
+      req.body.columnId
+    );
+    res.status(200).json(resTask);
+  });
 
 router
   .route('/:boardId/tasks/:taskId')
-  .all((req, res, next) => {
-    routersMiddleware('boards/:boardId/tasks/:taskId', req, res, next);
-  })
   .get(
     [param('taskId').isUUID(), param('boardId').isUUID()],
     async (req, res, next) => {
@@ -87,17 +57,7 @@ router
     }
   )
   .put(
-    [
-      param('taskId').isUUID(),
-      param('boardId').isUUID(),
-      body('id').isUUID(),
-      body('title').isString(),
-      body('order').isInt(),
-      body('description').isString(),
-      body('userId').isUUID(),
-      body('boardId').isUUID(),
-      body('columnId').isUUID()
-    ],
+    [param('taskId').isUUID(), param('boardId').isUUID()],
     async (req, res, next) => {
       try {
         const errorReq = validationResult(req);

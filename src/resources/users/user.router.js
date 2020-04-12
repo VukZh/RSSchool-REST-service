@@ -3,20 +3,10 @@ const User = require('./user.model');
 
 const usersService = require('./user.service');
 const tasksService = require('../tasks/task.service');
+const { validationResult, param } = require('express-validator');
 
-const routersMiddleware = require('../../common/routersMiddleware');
-
-const { validationResult, param, body } = require('express-validator');
-
-// router.use((req, res, next) => {
-//   console.log('Time: ', Date.now());
-//   next();
-// });
 router
   .route('/')
-  .all((req, res, next) => {
-    routersMiddleware('users/', req, res, next);
-  })
   .get(async (req, res, next) => {
     try {
       const users = await usersService.getAll();
@@ -26,39 +16,17 @@ router
       return next(error);
     }
   })
-  .post(
-    [
-      body('name').isString(),
-      body('login').isString(),
-      body('password')
-        .isString()
-        .isLength({ min: 5 })
-    ],
-    async (req, res, next) => {
-      try {
-        const errorReq = validationResult(req);
-        if (!errorReq.isEmpty()) {
-          throw new TypeError(
-            `wrong edit user ${JSON.stringify(errorReq.array())}`
-          );
-        }
-        const resUser = await usersService.saveUser(
-          req.body.name,
-          req.body.login,
-          req.body.password
-        );
-        res.status(200).json(User.toResponse(resUser));
-      } catch (error) {
-        return next(error);
-      }
-    }
-  );
+  .post(async (req, res) => {
+    const resUser = await usersService.saveUser(
+      req.body.name,
+      req.body.login,
+      req.body.password
+    );
+    res.status(200).json(User.toResponse(resUser));
+  });
 
 router
   .route('/:userId')
-  .all((req, res, next) => {
-    routersMiddleware('users/:userId', req, res, next);
-  })
   .get([param('userId').isUUID()], async (req, res, next) => {
     try {
       const errorReq = validationResult(req);
@@ -77,39 +45,29 @@ router
       return next(error);
     }
   })
-  .put(
-    [
-      param('userId').isUUID(),
-      body('name').isString(),
-      body('login').isString(),
-      body('password')
-        .isString()
-        .isLength({ min: 5 })
-    ],
-    async (req, res, next) => {
-      try {
-        const errorReq = validationResult(req);
-        if (!errorReq.isEmpty()) {
-          throw new TypeError(
-            `wrong edit user ${JSON.stringify(errorReq.array())}`
-          );
-        }
-        const resUser = await usersService.changeUser(
-          req.params.userId,
-          req.body.name,
-          req.body.login,
-          req.body.password
+  .put([param('userId').isUUID()], async (req, res, next) => {
+    try {
+      const errorReq = validationResult(req);
+      if (!errorReq.isEmpty()) {
+        throw new TypeError(
+          `wrong edit user ${JSON.stringify(errorReq.array())}`
         );
-        if (resUser) {
-          res.status(200).json(User.toResponse(resUser));
-        } else {
-          res.status(401).json('Access token is missing or invalid');
-        }
-      } catch (error) {
-        return next(error);
       }
+      const resUser = await usersService.changeUser(
+        req.params.userId,
+        req.body.name,
+        req.body.login,
+        req.body.password
+      );
+      if (resUser) {
+        res.status(200).json(User.toResponse(resUser));
+      } else {
+        res.status(401).json('Access token is missing or invalid');
+      }
+    } catch (error) {
+      return next(error);
     }
-  )
+  })
   .delete([param('userId').isUUID()], async (req, res, next) => {
     try {
       const errorReq = validationResult(req);

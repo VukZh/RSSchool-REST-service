@@ -67,7 +67,6 @@ const delTask = async (taskId, boardId) => {
 };
 
 const delTaskInBoard = async boardId => {
-  //   return tasks.filter(item => item.boardId !== boardId);
   const ind = [];
   tasks.forEach((el, index) => {
     if (el.boardId === boardId) ind.push(index);
