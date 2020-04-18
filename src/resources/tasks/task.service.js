@@ -1,5 +1,5 @@
 /* eslint-disable max-params */
-const tasksRepo = require('./task.memory.repository');
+const tasksRepo = require('./task.db.repository');
 const getAll = boardId => tasksRepo.getAll(boardId);
 
 const getTaskId = (taskId, boardId) => tasksRepo.getTaskId(taskId, boardId);

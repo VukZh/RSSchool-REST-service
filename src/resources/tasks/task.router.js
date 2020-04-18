@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const tasksService = require('./task.service');
 const { validationResult, param } = require('express-validator');
+const Task = require('./task.model');
 
 router
   .route('/:boardId/tasks')
@@ -13,7 +14,10 @@ router
         );
       }
       const tasks = await tasksService.getAll(req.params.boardId);
-      res.status(200).json(tasks);
+
+      const resTasks = tasks.map(Task.toResponse);
+
+      res.status(200).json(resTasks);
     } catch (error) {
       return next(error);
     }
@@ -47,7 +51,7 @@ router
           req.params.boardId
         );
         if (resTask) {
-          res.status(200).json(resTask);
+          res.status(200).json(Task.toResponse(resTask));
         } else {
           res.status(404).json('Task not found');
         }

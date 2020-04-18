@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const Board = require('./board.model');
 
 const boardsService = require('./board.service');
 const tasksService = require('../tasks/task.service');
@@ -10,8 +11,10 @@ router
   .get(async (req, res, next) => {
     try {
       const boards = await boardsService.getAll();
-      res.status(200).json(boards);
+      const resBoard = boards.map(Board.toResponse);
+      res.status(200).json(resBoard);
     } catch (error) {
+      // console.log('ERRooRRR ' + resBoard);
       return next(error);
     }
   })
@@ -20,7 +23,7 @@ router
       req.body.title,
       req.body.columns
     );
-    res.status(200).json(resBoard);
+    res.status(200).json(Board.toResponse(resBoard));
   });
 
 router
@@ -34,8 +37,9 @@ router
         );
       }
       const resBoard = await boardsService.getBoardId(req.params.boardId);
+      // console.log('-------resBoard-------- ' + resBoard)
       if (resBoard) {
-        res.status(200).json(resBoard);
+        res.status(200).json(Board.toResponse(resBoard));
       } else {
         res.status(404).json('Board not found');
       }

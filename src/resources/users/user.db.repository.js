@@ -50,7 +50,7 @@ const delUser = async userId => {
   //   }
   //   return false;
   //   throw new Error();
-  return User.deleteOne({ _id: userId });
+  return (await User.deleteOne({ _id: userId })).deletedCount;
 };
 
 module.exports = { getAll, getUserId, saveUser, changeUser, delUser };
