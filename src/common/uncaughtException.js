@@ -1,4 +1,3 @@
-/* eslint-disable spaced-comment */
 /* eslint-disable no-process-exit */
 /* eslint-disable no-sync */
 
