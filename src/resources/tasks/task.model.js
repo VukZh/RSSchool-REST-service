@@ -18,7 +18,6 @@ const taskSchema = new Schema(
   {
     title: String,
     order: Number,
-    password: String,
     description: String,
     userId: String,
     boardId: String,
@@ -32,8 +31,9 @@ const taskSchema = new Schema(
 );
 
 taskSchema.statics.toResponse = task => {
-  const { id, title, order, description, userId } = task;
-  return { id, title, order, description, userId };
+  const { id, title, order, description, userId, boardId, columnId } = task;
+  // console.log('>>> ' + JSON.stringify({ id, title, order, description, userId }));
+  return { id, title, order, description, userId, boardId, columnId };
 };
 
 const Task = model('Task', taskSchema);

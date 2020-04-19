@@ -31,7 +31,7 @@ router
       req.params.boardId,
       req.body.columnId
     );
-    res.status(200).json(resTask);
+    res.status(200).json(Task.toResponse(resTask));
   });
 
 router

@@ -34,12 +34,18 @@ const saveTask = async (
 
 const getAll = async _boardId => {
   // tasks.filter(task => task.boardId === boardId);
+
   return Task.find({ boardId: _boardId });
+
+  // return new Error();
 };
 
 const getTaskId = async (_taskId, _boardId) => {
   // tasks.find(task => task.id === taskId && task.boardId === boardId);
-  return Task.find({ _id: _taskId, boardId: _boardId });
+
+  return Task.findOne({ _id: _taskId, boardId: _boardId });
+
+  // return new Error();
 };
 
 const changeTask = async (
@@ -57,6 +63,8 @@ const changeTask = async (
     { _id: _taskIdOld, boardId: _boardIdOld },
     { id, title, order, description, userId, boardId, columnId }
   );
+
+  // return new Error();
   //   const chTask = await getTaskId(taskIdOld, boardIdOld);
   //   if (chTask) {
   //     Object.assign(chTask, {
@@ -83,36 +91,43 @@ const delTask = async (_taskId, _boardId) => {
   //     return true;
   //   }
   //   return false;
-  return Task.deleteOne({ _id: _taskId, boardId: _boardId });
+
+  return (await Task.deleteOne({ _id: _taskId, boardId: _boardId }))
+    .deletedCount;
+
+  // return new Error();
 };
 
-const delTaskInBoard = async _boardId => {
-  //   const ind = [];
-  //   tasks.forEach((el, index) => {
-  //     if (el.boardId === boardId) ind.push(index);
-  //   });
-  //   ind.reverse();
-  //   ind.forEach(index => tasks.splice(index, 1));
-  //   return new Error();
-  return Task.deleteMany({ boardId: _boardId });
-};
+// const delTaskInBoard = async _boardId => {
+//   //   const ind = [];
+//   //   tasks.forEach((el, index) => {
+//   //     if (el.boardId === boardId) ind.push(index);
+//   //   });
+//   //   ind.reverse();
+//   //   ind.forEach(index => tasks.splice(index, 1));
+//   //   return new Error();
 
-const nulTaskForUser = async userId => {
-  //   const ind = [];
-  //   tasks.forEach((el, index) => {
-  //     if (el.userId === userId) ind.push(index);
-  //   });
-  //   ind.forEach(index => (tasks[index].userId = null));
-  console.log(userId);
-  return new Error();
-};
+//   // return Task.deleteMany({ boardId: _boardId });
+
+//   return new Error();
+// };
+
+// const nulTaskForUser = async userId => {
+//   //   const ind = [];
+//   //   tasks.forEach((el, index) => {
+//   //     if (el.userId === userId) ind.push(index);
+//   //   });
+//   //   ind.forEach(index => (tasks[index].userId = null));
+//   // console.log(userId);
+//   return new Error();
+// };
 
 module.exports = {
   getAll,
   getTaskId,
   saveTask,
   changeTask,
-  delTask,
-  delTaskInBoard,
-  nulTaskForUser
+  delTask
+  // delTaskInBoard,
+  // nulTaskForUser
 };
