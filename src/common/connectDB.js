@@ -9,7 +9,6 @@ const connectDB = cb => {
   const db = mongoose.connection;
   db.dropDatabase();
   db.once('open', () => {
-    // console.log('DB connected...');
     cb();
   });
 };

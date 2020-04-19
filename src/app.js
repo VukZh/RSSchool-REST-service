@@ -6,7 +6,6 @@ const YAML = require('yamljs');
 const userRouter = require('./resources/users/user.router');
 const boardRouter = require('./resources/boards/board.router');
 const taskRouter = require('./resources/tasks/task.router');
-const chalk = require('chalk');
 
 const routeLoggerMiddleware = require('./common/routeLoggerMiddleware');
 
@@ -25,7 +24,7 @@ app.use('/', (req, res, next) => {
   next();
 });
 
-app.use(routeLoggerMiddleware);
+// app.use(routeLoggerMiddleware); //logging for console and files
 
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);

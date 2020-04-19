@@ -14,7 +14,6 @@ router
       const resBoard = boards.map(Board.toResponse);
       res.status(200).json(resBoard);
     } catch (error) {
-      // console.log('ERRooRRR ' + resBoard);
       return next(error);
     }
   })
@@ -37,7 +36,6 @@ router
         );
       }
       const resBoard = await boardsService.getBoardId(req.params.boardId);
-      // console.log('-------resBoard-------- ' + resBoard)
       if (resBoard) {
         res.status(200).json(Board.toResponse(resBoard));
       } else {
