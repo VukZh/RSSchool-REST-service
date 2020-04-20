@@ -1,12 +1,5 @@
 const uuid = require('uuid');
 const { Schema, model } = require('mongoose');
-// class Board {
-//   constructor(title, columns) {
-//     this.id = uuid();
-//     this.title = title || 'title';
-//     this.columns = columns || [];
-//   }
-// }
 
 const boardSchema = new Schema(
   {
