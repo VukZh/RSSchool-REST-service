@@ -13,4 +13,8 @@ const delUser = userId => {
   return usersRepo.delUser(userId);
 };
 
-module.exports = { getAll, getUserId, saveUser, changeUser, delUser };
+const authUser = (login, password) => {
+  return usersRepo.authUser(login, password);
+};
+
+module.exports = { getAll, getUserId, saveUser, changeUser, delUser, authUser };

@@ -45,6 +45,7 @@
     ]
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "chalk": "^4.0.0",
     "cross-env": "6.0.3",
     "dotenv": "8.2.0",
@@ -52,6 +53,7 @@
     "express-validator": "^6.4.0",
     "express-winston": "^4.0.3",
     "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.9",
     "swagger-ui-express": "4.1.2",
     "uuid": "3.3.3",
