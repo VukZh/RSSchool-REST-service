@@ -28,13 +28,15 @@ app.use('/', (req, res, next) => {
 });
 
 // app.use(routeLoggerMiddleware); //logging for console and files
+// app.use('*', authMiddleware);
 
-app.use('/users', userRouter);
-app.use('/boards', boardRouter);
-app.use('/boards', taskRouter);
+app.use('/users', authMiddleware, userRouter);
+app.use('/boards', authMiddleware, boardRouter);
+app.use('/boards', authMiddleware, taskRouter);
 app.use('/login', loginRouter);
 
 app.use((err, req, res, next) => {
+  console.log(`res status ... ${err}`);
   if (err.name === 'TypeError') {
     res.status(422).json('Invalid UUID');
   } else if (err.name === 'SyntaxError') {

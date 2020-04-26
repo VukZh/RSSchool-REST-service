@@ -1,12 +1,6 @@
-// const { PORT } = require('./common/config');
-// const app = require('./app');
 const uncaughtException = require('./common/uncaughtException');
 const unhandledRejection = require('./common/unhandledRejection');
-// const connectError = require('./common/connectError');
 const connectDB = require('./common/connectDB');
-// const addAdmin = require('./common/addAdmin');
-// const mongoose = require('mongoose');
-// const { MONGO_CONNECTION_STRING } = require('./common/config');
 
 uncaughtException();
 unhandledRejection();

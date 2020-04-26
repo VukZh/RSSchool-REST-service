@@ -22,11 +22,10 @@ userSchema.statics.toResponse = user => {
   return { id, name, login };
 };
 
-// eslint-disable-next-line func-names
 userSchema.pre('save', async function (next) {
   const user = this;
   if (user.isModified('password')) {
-    user.password = await bcrypt.hash(user.password, 4);
+    user.password = await bcrypt.hash(user.password, 10);
   }
   next();
 });

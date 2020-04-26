@@ -50,8 +50,7 @@ const authUser = async (login, password) => {
           expiresIn: jwtExpirySeconds
         }
       );
-      console.log(`token ${token}`);
-
+      // console.log('token ' + token);
       return token;
     }
   }

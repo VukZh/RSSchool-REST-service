@@ -7,10 +7,7 @@ router.route('/').post(async (req, res) => {
   const token = await usersService.authUser(login, password);
 
   if (token) {
-    res
-      .status(200)
-      .set('JWT', token)
-      .json('Successful login');
+    res.status(200).json({ token });
   } else {
     res.status(403).json('Incorrect login or password');
   }
