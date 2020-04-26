@@ -11,6 +11,7 @@ const loginRouter = require('./resources/users/login.router');
 const routeLoggerMiddleware = require('./common/routeLoggerMiddleware');
 
 const authMiddleware = require('./common/authMiddleware');
+// const authMiddleware2 = require('./common/authMiddleware2');
 
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
@@ -28,11 +29,16 @@ app.use('/', (req, res, next) => {
 });
 
 // app.use(routeLoggerMiddleware); //logging for console and files
-// app.use('*', authMiddleware);
+app.all('*', authMiddleware);
 
-app.use('/users', authMiddleware, userRouter);
-app.use('/boards', authMiddleware, boardRouter);
-app.use('/boards', authMiddleware, taskRouter);
+// app.use('/users', authMiddleware, userRouter);
+// app.use('/boards', authMiddleware, boardRouter);
+// app.use('/boards', authMiddleware, taskRouter);
+// app.use('/login', loginRouter);
+
+app.use('/users', userRouter);
+app.use('/boards', boardRouter);
+app.use('/boards', taskRouter);
 app.use('/login', loginRouter);
 
 app.use((err, req, res, next) => {

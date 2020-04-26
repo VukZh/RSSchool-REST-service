@@ -28,7 +28,11 @@ const getUserId = async userId => {
 };
 
 const changeUser = async (userId, name, login, password) => {
-  return User.updateOne({ _id: userId }, { userId, name, login, password });
+  const hashPassword = await bcrypt.hash(password, 10);
+  return User.updateOne(
+    { _id: userId },
+    { userId, name, login, password: hashPassword }
+  );
 };
 
 const delUser = async userId => {
