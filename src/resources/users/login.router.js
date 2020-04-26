@@ -1,18 +1,16 @@
 const router = require('express').Router();
-// const User = require('./user.model');
-
 const usersService = require('./user.service');
-// const tasksService = require('../tasks/task.service');
-// const { validationResult, param } = require('express-validator');
 
 router.route('/').post(async (req, res) => {
-  const checkUser = await usersService.authUser(
-    req.body.login,
-    req.body.password
-  );
+  const { login, password } = req.body;
 
-  if (checkUser) {
-    res.status(200).json('Successful login');
+  const token = await usersService.authUser(login, password);
+
+  if (token) {
+    res
+      .status(200)
+      .set('JWT', token)
+      .json('Successful login');
   } else {
     res.status(403).json('Incorrect login or password');
   }

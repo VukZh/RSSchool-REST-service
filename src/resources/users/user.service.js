@@ -17,4 +17,11 @@ const authUser = (login, password) => {
   return usersRepo.authUser(login, password);
 };
 
-module.exports = { getAll, getUserId, saveUser, changeUser, delUser, authUser };
+module.exports = {
+  getAll,
+  getUserId,
+  saveUser,
+  changeUser,
+  delUser,
+  authUser
+};

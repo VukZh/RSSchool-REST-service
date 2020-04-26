@@ -2,6 +2,11 @@ const User = require('./user.model');
 
 const bcrypt = require('bcryptjs');
 
+const jwt = require('jsonwebtoken');
+const { JWT_SECRET_KEY } = require('../../common/config');
+
+const jwtExpirySeconds = 300;
+
 const saveUser = async (name, login, password) => {
   const user = await User.findOne({ login });
   if (user) {
@@ -31,14 +36,28 @@ const delUser = async userId => {
 };
 
 const authUser = async (login, password) => {
-  let res = false;
   const user = await User.findOne({ login });
   if (user) {
-    // console.log('RES login ' + user);
-    res = await bcrypt.compare(password, user.password);
+    const checkUser = await bcrypt.compare(password, user.password);
+    if (checkUser) {
+      const token = jwt.sign(
+        {
+          userId: user._id,
+          login: user.login
+        },
+        JWT_SECRET_KEY,
+        {
+          expiresIn: jwtExpirySeconds
+        }
+      );
+      console.log(`token ${token}`);
+
+      return token;
+    }
   }
-  console.log(`RES ${res}`);
-  return res;
+
+  // console.log('RES ' + res);
+  return false;
 };
 
 module.exports = { getAll, getUserId, saveUser, changeUser, delUser, authUser };

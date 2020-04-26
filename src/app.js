@@ -10,6 +10,8 @@ const loginRouter = require('./resources/users/login.router');
 
 const routeLoggerMiddleware = require('./common/routeLoggerMiddleware');
 
+const authMiddleware = require('./common/authMiddleware');
+
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
 

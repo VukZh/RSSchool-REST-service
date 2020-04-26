@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const uuid = require('uuid');
 const bcrypt = require('bcryptjs');
 
@@ -22,8 +23,7 @@ userSchema.statics.toResponse = user => {
 };
 
 // eslint-disable-next-line func-names
-// eslint-disable-next-line space-before-function-paren
-userSchema.pre('save', async function(next) {
+userSchema.pre('save', async function (next) {
   const user = this;
   if (user.isModified('password')) {
     user.password = await bcrypt.hash(user.password, 4);
