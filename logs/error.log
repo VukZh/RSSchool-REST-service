@@ -1,0 +1,1760 @@
+{Error connection with MongoDB: MongooseServerSelectionError: Authentication failed. 2020-04-22T12:42:12.201Z}
+{Caught unhandled Rejection at: TypeError: Cannot read property 'password' of null
+    at Object.authUser (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.db.repository.js:31:51)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:9:21,"timestamp":2020-04-22T13:26:14.721Z}
+{Caught unhandled Rejection at: MongoError: E11000 duplicate key error collection: RSS_REST_project.users index: login_1 dup key: { login: "string1" }
+    at Function.create (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\core\error.js:43:12)
+    at toError (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\utils.js:149:22)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\operations\common_functions.js:265:39
+    at handler (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\core\sdam\topology.js:913:24)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\cmap\connection_pool.js:352:13
+    at handleOperationResult (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\core\sdam\server.js:487:5)
+    at MessageStream.messageHandler (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\cmap\connection.js:270:5)
+    at MessageStream.emit (events.js:311:20)
+    at processIncomingData (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:441:12)
+    at writeOrBuffer (_stream_writable.js:425:5)
+    at MessageStream.Writable.write (_stream_writable.js:316:11)
+    at TLSSocket.ondata (_stream_readable.js:714:22)
+    at TLSSocket.emit (events.js:311:20)
+    at addChunk (_stream_readable.js:294:12),"timestamp":2020-04-22T13:57:14.071Z}
+{Caught unhandled Rejection at: MongoError: E11000 duplicate key error collection: RSS_REST_project.users index: login_1 dup key: { login: "string1" }
+    at Function.create (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\core\error.js:43:12)
+    at toError (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\utils.js:149:22)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\operations\common_functions.js:265:39
+    at handler (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\core\sdam\topology.js:913:24)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\cmap\connection_pool.js:352:13
+    at handleOperationResult (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\core\sdam\server.js:487:5)
+    at MessageStream.messageHandler (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\cmap\connection.js:270:5)
+    at MessageStream.emit (events.js:311:20)
+    at processIncomingData (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:441:12)
+    at writeOrBuffer (_stream_writable.js:425:5)
+    at MessageStream.Writable.write (_stream_writable.js:316:11)
+    at TLSSocket.ondata (_stream_readable.js:714:22)
+    at TLSSocket.emit (events.js:311:20)
+    at addChunk (_stream_readable.js:294:12),"timestamp":2020-04-22T13:59:14.063Z}
+{Caught unhandled Rejection at: TypeError: Cannot destructure property 'login' of '(intermediate value)' as it is null.
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:20:13
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-22T18:35:50.306Z}
+{Caught unhandled Rejection at: ReferenceError: login is not defined
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:24:9
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-22T18:36:36.740Z}
+{Caught unhandled Rejection at: ReferenceError: login is not defined
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:24:9
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-22T18:36:50.950Z}
+{Caught unhandled Rejection at: ReferenceError: login is not defined
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:24:9
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-22T18:37:01.910Z}
+{Caught unhandled Rejection at: CastError: Cast to string failed for value "{ log: 'admin' }" at path "login" for model "User"
+    at new CastError (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongoose\lib\error\cast.js:29:11)
+    at model.Query.exec (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongoose\lib\query.js:4340:21)
+    at model.Query.Query.then (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\mongoose\lib\query.js:4432:15),"timestamp":2020-04-22T18:41:06.645Z}
+{Caught unhandled Rejection at: Error: "iat" should be a number of seconds
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\sign.js:52:15
+    at Array.forEach (<anonymous>)
+    at validate (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\sign.js:43:6)
+    at validatePayload (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.module.exports [as sign] (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\sign.js:114:7)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:22:23,"timestamp":2020-04-22T19:01:13.663Z}
+{Caught unhandled Rejection at: Error: "iat" should be a number of seconds
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\sign.js:52:15
+    at Array.forEach (<anonymous>)
+    at validate (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\sign.js:43:6)
+    at validatePayload (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.module.exports [as sign] (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\sign.js:114:7)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:22:23,"timestamp":2020-04-22T19:01:51.452Z}
+{Caught unhandled Rejection at: JsonWebTokenError: invalid signature
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:36:52,"timestamp":2020-04-22T19:37:35.555Z}
+{Caught unhandled Rejection at: JsonWebTokenError: invalid signature
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:36:52,"timestamp":2020-04-23T11:29:34.592Z}
+{Caught unhandled Rejection at: JsonWebTokenError: invalid signature
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:36:52,"timestamp":2020-04-23T11:31:34.586Z}
+{Caught unhandled Rejection at: JsonWebTokenError: invalid signature
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:36:52,"timestamp":2020-04-23T11:46:27.464Z}
+{Caught unhandled Rejection at: JsonWebTokenError: invalid signature
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:36:52,"timestamp":2020-04-23T11:48:24.976Z}
+{Caught unhandled Rejection at: JsonWebTokenError: invalid signature
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:36:52,"timestamp":2020-04-23T11:52:37.680Z}
+{Caught unhandled Rejection at: ReferenceError: check is not defined
+    at Object.authUser (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.db.repository.js:42:15)
+    at async D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:16:17,"timestamp":2020-04-23T12:05:49.584Z}
+{Caught unhandled Rejection at: TypeError: Cannot read property 'password' of null
+    at Object.authUser (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.db.repository.js:41:57)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:16:17,"timestamp":2020-04-23T12:09:03.248Z}
+{Error connection with MongoDB: Error: Invalid salt version: vu 2020-04-23T14:05:47.451Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.026Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.115Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.121Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.129Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.134Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.227Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.243Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.342Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.347Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.421Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.431Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.438Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.448Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.521Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.523Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.534Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:14:16.538Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:22.967Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.094Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.212Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.223Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.227Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.407Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.421Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.697Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.708Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.712Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.803Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.814Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.817Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.826Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.829Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.905Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T11:42:23.914Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.302Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.378Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.387Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.391Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.398Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.412Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.477Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.511Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.525Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.577Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.587Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.709Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.722Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.813Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.824Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.827Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:15:22.924Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:16:45.871Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:16:45.960Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:16:46.041Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:17:40.713Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:17:40.927Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:17:41.221Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:19:31.128Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:19:31.211Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:19:31.229Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:34:26.891Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:35:19.867Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:36:53.607Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:39:07.472Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:39:07.599Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:39:07.811Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:39:49.704Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:39:50.111Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:39:50.364Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:42:19.917Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:42:20.074Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:42:20.122Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:49:22.271Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:49:22.458Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:49:22.563Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:50:19.218Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:50:19.338Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:50:19.579Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:51:29.073Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:51:29.289Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:51:29.391Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:52:37.645Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-24T12:52:37.943Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:33:40.698Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:33:40.827Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:33:40.940Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:42.326Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:42.733Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:42.739Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:42.742Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:42.844Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:42.848Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:42.852Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:42.867Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:42.878Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:42.951Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:42.964Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:42.979Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:42.986Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:43.040Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:43.047Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:43.061Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:34:43.086Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:18.580Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:18.901Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:18.905Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:18.909Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:18.933Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:18.945Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:19.021Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:19.045Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:19.058Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:19.118Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:19.127Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:19.251Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:429:9),"timestamp":2020-04-25T12:53:19.266Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:19.276Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:19.367Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:19.379Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:53:19.483Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:50.809Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.011Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.024Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.125Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.142Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.156Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.224Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.263Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.266Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.283Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.320Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.362Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.372Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.377Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.390Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.420Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:54:51.469Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:56:30.657Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:56:30.776Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T12:56:31.001Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:10.711Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:10.910Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:10.921Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:10.975Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:10.979Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:10.991Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:11.112Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:11.117Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:11.330Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:11.346Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:11.351Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:11.432Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:11.446Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:11.449Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:11.463Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:11.488Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:02:11.532Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.022Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.089Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.120Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.125Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.191Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.227Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.238Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.248Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.285Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.302Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.324Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.334Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.356Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.385Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.415Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.431Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:03:25.440Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:10:21
+    at runNextTicks (internal/process/task_queues.js:62:5)
+    at processImmediate (internal/timers.js:429:9),"timestamp":2020-04-25T13:09:20.808Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:10:21,"timestamp":2020-04-25T13:09:20.933Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\login.router.js:10:21,"timestamp":2020-04-25T13:09:21.036Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:21.075Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:21.465Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:21.501Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:21.653Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:21.661Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:21.866Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:21.869Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:21.872Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:21.881Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:21.973Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:21.985Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:21.988Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:22.171Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:22.183Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:22.187Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:22.278Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:09:22.288Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:52.386Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:52.858Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.148Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.170Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.173Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.261Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.264Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.267Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.280Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.286Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.367Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.376Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.397Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.400Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.466Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.469Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:10:53.489Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:11:21.089Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:11:21.856Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:11:21.943Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:12:51.122Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:12:51.240Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:12:51.376Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:13:12.727Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:13:13.040Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T13:13:13.511Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:03.565Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:03.686Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:03.699Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:03.797Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:03.802Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:03.897Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\tasks\task.router.js:34:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:03.902Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:04.065Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\boards\board.router.js:25:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:04.169Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:04.366Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:04.377Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:04.474Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:04.483Z}
+{Caught unhandled Rejection at: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:526:11)
+    at ServerResponse.header (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\node_modules\express\lib\response.js:267:15)
+    at D:\-js-\RSSchool-REST-service New\RSSchool-REST-service\src\resources\users\user.router.js:25:21
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5),"timestamp":2020-04-25T16:15:04.573Z}
